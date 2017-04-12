@@ -8,11 +8,11 @@ h1 {
 }
 
 /* View: Phone list */
-.phones {
+.chucks {
   list-style: none;
 }
 
-.phones li {
+.chucks li {
   clear: both;
   height: 115px;
   padding-top: 15px;
@@ -27,7 +27,7 @@ h1 {
 }
 
 /* View: Phone detail */
-.phone {
+.chuck {
   background-color: white;
   display: none;
   float: left;
@@ -38,11 +38,11 @@ h1 {
   width: 400px;
 }
 
-.phone:first-child {
+.chuck:first-child {
   display: block;
 }
 
-.phone-images {
+.chuck-images {
   background-color: white;
   float: left;
   height: 450px;
@@ -51,18 +51,18 @@ h1 {
   width: 450px;
 }
 
-.phone-thumbs {
+.chuck-thumbs {
   list-style: none;
   margin: 0;
 }
 
-.phone-thumbs img {
+.chuck-thumbs img {
   height: 100px;
   padding: 1em;
   width: 100px;
 }
 
-.phone-thumbs li {
+.chuck-thumbs li {
   background-color: white;
   border: 1px solid black;
   cursor: pointer;

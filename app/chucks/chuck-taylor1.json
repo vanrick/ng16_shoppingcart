@@ -1,0 +1,23 @@
+{
+    "reviews": "I love these shoes but I'll probably end up putting in-soles because I have high arches. It's amazing how incredibly fast the order came though. My shoe size can range from a woman's 6, 6.5, or 7 depending on the brand. I bought a woman's size 6.5 Converse Chuck Taylor All Star Hi-top and it fits perfectly. I'll definitely be shopping at Zappos more! I'd also recommend: Alice+Olivia Keds",
+    "description": "Vintage Converse® rubber toe cap and color-contrasting sidewall.",
+    "id": "chuck-taylor1",
+    "images": [
+        "img/chucks/a.jpg",
+        "img/chucks/a2.jpg",
+        "img/chucks/a3.jpg",
+        "img/chucks/a4.jpg",
+        "img/chucks/a5.jpg",
+        "img/chucks/a6.jpg",
+        "img/chucks/a7.jpg"
+    ],
+    "name": "Converse Chuck Taylor® Core Hi",
+    "sizeAndWeight": {
+        "features": [
+          "Features hi-top sneakers with canvas uppers.",
+          "Canvas-lined with lightly padded footbed for comfort."
+        ],
+        "weight": "12.1 oz",
+        "size": "For men's sizes, please select 1/2 size down from your normal size (if you wear Men's size 9, please choose Men's size 8.5). Women's sizes should be true to size."
+    }
+}

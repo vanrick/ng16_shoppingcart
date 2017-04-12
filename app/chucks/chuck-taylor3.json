@@ -1,0 +1,27 @@
+{
+    "reviews": "N/A",
+    "description": "Signature Chuck Taylor All Star rubber toe box, textured toe bumper, contrast sidewall trim, medial-side air vent portholes and All Star heel patch.",
+    "id": "chuck-taylor3",
+    "images": [
+        "img/chucks/c.jpg",
+        "img/chucks/c2.jpg",
+        "img/chucks/c3.jpg",
+        "img/chucks/c4.jpg",
+        "img/chucks/c5.jpg",
+        "img/chucks/c6.jpg",
+        "img/chucks/c7.jpg"
+    ],
+    "name": "Converse Chuck Taylor® All Star Shoreline Slip-On Metallic",
+    "sizeAndWeight": {
+        "features": [
+          "Canvas uppers for a durable feel.",
+          "Unlined with a cushioned insole for all-day comfort.",
+          "Slip-on construction with removable laces for a personalized look.",
+          "Elastic collar with heel pull tab for a close, comfy fit.",
+          "Rubber midsole.",
+          "Classic Converse diamond-pattern rubber outsole."
+        ],
+        "weight": "13 oz",
+        "size": "For men's sizes, please select 1/2 size down from your normal size (if you wear Men's size 9, please choose Men's size 8.5). Women's sizes should be true to size."
+    }
+}

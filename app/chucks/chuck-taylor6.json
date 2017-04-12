@@ -1,0 +1,26 @@
+{
+    "reviews": "Converse fan/wearer for years... this was my first &quot;mid/high top&quot;. Extremely comfortable. Extremely stylish (gotten several compliments). Look great with jeans. Highly recommend.",
+    "description": "Signature Chuck Taylor All Star rubber toe, textured toe bumper, contrast midsole stripe, medial side air port holes and logo patch, and Converse All Star heel patch.",
+    "id": "chuck-taylor6",
+    "images": [
+        "img/chucks/p.jpg",
+        "img/chucks/p2.jpg",
+        "img/chucks/p3.jpg",
+        "img/chucks/p4.jpg",
+        "img/chucks/p5.jpg",
+        "img/chucks/p6.jpg",
+        "img/chucks/p7.jpg"
+    ],
+    "name": "Converse Chuck Taylor® All Star® Street Gum Mid",
+    "sizeAndWeight": {
+        "features": [
+          "Durable canvas upper.",
+          "Mid-top silhouette offers excellent ankle protection with a padded collar and tongue.",
+          "Lace-up closure with metal eyelets for a snug and durable fit.",
+          "Canvas lining and a padded footbed for all-day comfort.",
+          "Gum-rubber outsole with custom Diamond tread pattern for traction."
+        ],
+        "weight": "13 oz",
+        "size": "True to size."
+    }
+}

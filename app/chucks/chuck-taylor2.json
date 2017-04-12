@@ -1,0 +1,26 @@
+{
+    "reviews": "To call these shoes the greatest invention in the history of the universe does not do justice to their wonder. Thanks to my mother, who despite being a mere 5'3 tall has rather sizeable feet, I was born with the family curse of larger than necessary feet. Many a time I see a pair of shoes that I adore but, upon requesting them in my size, recoil in disgust at the gargantuan monster that lay before me. That was of course until I met the Converse Chuck Taylor All Star Shoreline Slip-On Ox. Upon first glance, I was intrigued by their cuteness but I feared that, like most Converses, they would do all they could to accentuate the size of my size 10s. Then I noticed something intriguing, rather than the usual set of six grommets, these little guys only featured four. I was curious to see if this would make a difference and decided to take a chance. When they arrived I, like Cinderella, presented my out-stretched foot and hoped that this would be the fit I had always dreamed of. Anxiously and cautiously, I placed my size 10s into the shoes and then nervously walked to my full-length mirror. Before me I saw a miracle, not only were they as adorable as I had hoped but rather than seeing feet which looked larger, or even normal size, I saw what appeared to be smaller feet. What I had waited for all my life was currently upon my person and I could not believe my good fortune. They are cute with capris, cute with shorts, cute with dresses. These shoes are perfection. These shoes are magical. These shoes are the greatest invention in the history of the universe.",
+    "description": "Signature Chuck Taylor All Star rubber toe box, textured toe bumper, contrast sidewall trim, medial-side air vent portholes and All Star heel patch.",
+    "id": "chuck-taylor2",
+    "images": [
+        "img/chucks/b.jpg",
+        "img/chucks/b2.jpg",
+        "img/chucks/b3.jpg",
+        "img/chucks/b4.jpg",
+        "img/chucks/b5.jpg",
+        "img/chucks/b6.jpg",
+        "img/chucks/b7.jpg"
+    ],
+    "name": "Converse Chuck Taylor® All Star Shoreline Slip-On",
+    "sizeAndWeight": {
+        "features": [
+          "Canvas Uppers.",
+          "Unlined with a cushioned insole for all-day comfort.",
+          "Elastic collar with heel pull tab for a close, comfy fit.",
+          "Rubber midsole.",
+          "Classic Converse diamond-pattern rubber outsole."
+        ],
+        "weight": "13 oz",
+        "size": "For men's sizes, please select 1/2 size down from your normal size (if you wear Men's size 9, please choose Men's size 8.5). Women's sizes should be true to size."
+    }
+}

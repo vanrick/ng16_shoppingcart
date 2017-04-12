@@ -1,0 +1,44 @@
+[
+    {
+        "age": 0,
+        "id": "chuck-taylor1",
+        "imageUrl": "img/chucks/a.jpg",
+        "name": "Converse Chuck Taylor® Core Hi",
+        "snippet": "Ol' skool never looked so fly! Rep your era to the fullest in a pair of these classic Chucks from Converse®"
+    },
+    {
+        "age": 1,
+        "id": "chuck-taylor2",
+        "imageUrl": "img/chucks/b.jpg",
+        "name": "Converse Chuck Taylor® All Star Shoreline Slip-On",
+        "snippet": "From the coastline to the promenade, give your style a spring-time vibe with the Chuck Taylor® All Star® Shoreline slip-ons from Converse®!"
+    },
+    {
+        "age": 2,
+        "id": "chuck-taylor3",
+        "imageUrl": "img/chucks/c.jpg",
+        "name": "Converse Chuck Taylor® All Star Shoreline Metallic",
+        "snippet": "From the coastline to the promenade, give your style a spring-time vibe with the Chuck Taylor® All Star® Shoreline slip-ons from Converse®!"
+    },
+    {
+        "age": 3,
+        "id": "chuck-taylor4",
+        "imageUrl": "img/chucks/d.jpg",
+        "name": "Converse by John Varvatos Chuck Taylor All Star II OX Textile",
+        "snippet": "Achieve the perfect sneaker look with the Chuck Taylor All Star II Ox Textile!"
+    },
+    {
+        "age": 4,
+        "id": "chuck-taylor5",
+        "imageUrl": "img/chucks/e.jpg",
+        "name": "Converse Chuck Taylor® All Star® Street Basics Mid",
+        "snippet": "Converse® hits the ground running with the Chuck Taylor® All Star® Street Basics Mid."
+    },
+    {
+        "age": 5,
+        "id": "chuck-taylor6",
+        "imageUrl": "img/chucks/p.jpg",
+        "name": "Converse Chuck Taylor® All Star® Street Gum Mid",
+        "snippet": "Lace up your kicks and hit the street with Converse®."
+    }
+]

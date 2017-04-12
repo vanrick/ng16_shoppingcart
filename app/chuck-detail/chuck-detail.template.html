@@ -1,0 +1,37 @@
+<div class="chuck-images">
+  <img ng-src="{{img}}" class="chuck"
+      ng-class="{selected: img === $ctrl.mainImageUrl}"
+      ng-repeat="img in $ctrl.chuck.images" />
+</div>
+
+<h1>{{$ctrl.chuck.name}}</h1>
+
+<p>{{$ctrl.chuck.description}}</p>
+
+<ul class="chuck-thumbs">
+  <li ng-repeat="img in $ctrl.chuck.images">
+    <img ng-src="{{img}}" ng-click="$ctrl.setImage(img)" />
+  </li>
+</ul>
+
+<ul class="specs">
+  <li>
+    <span>Size and Weight</span>
+    <br>
+    <br>
+    <dl>
+      <dt>Sizing</dt>
+      <dd>{{$ctrl.chuck.sizeAndWeight.size}}</dd>
+      <dt>Weight</dt>
+      <dd>{{$ctrl.chuck.sizeAndWeight.weight}}</dd>
+      <dt>Features</dt>
+      <dd ng-repeat="dim in $ctrl.chuck.sizeAndWeight.features">{{dim}}</dd>
+    </dl>
+  </li>
+  <li>
+    <span>Reviews:</span>
+    <br>
+    <br>
+    <dd>{{$ctrl.chuck.reviews}}</dd>
+  </li>
+</ul>

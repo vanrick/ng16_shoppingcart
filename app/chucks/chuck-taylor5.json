@@ -1,0 +1,26 @@
+{
+    "reviews": "N/A",
+    "description": "Signature Chuck Taylor All Star rubber toe, textured toe bumper, contrast midsole stripe, medial side air port holes and logo patch, and Converse All Star heel patch.",
+    "id": "chuck-taylor5",
+    "images": [
+        "img/chucks/e.jpg",
+        "img/chucks/e2.jpg",
+        "img/chucks/e3.jpg",
+        "img/chucks/e4.jpg",
+        "img/chucks/e5.jpg",
+        "img/chucks/e6.jpg",
+        "img/chucks/e7.jpg"
+    ],
+    "name": "Converse Chuck Taylor® All Star® Street Basics Mid",
+    "sizeAndWeight": {
+        "features": [
+          "Durable canvas upper.",
+          "Mid-top silhouette offers excellent ankle protection with a padded collar and tongue.",
+          "Lace-up closure with metal eyelets for a snug and durable fit.",
+          "Textile lining and a padded footbed for all-day comfort.",
+          "Rubber outsole with custom Diamond tread pattern for traction."
+        ],
+        "weight": "13 oz",
+        "size": "For men's sizes, please select 1/2 size down from your normal size (if you wear Men's size 9, please choose Men's size 8.5). Women's sizes should be true to size."
+    }
+}

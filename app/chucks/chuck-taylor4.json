@@ -1,0 +1,28 @@
+{
+    "reviews": "They look great and feel comfortable. You should note that the photo for the Ink color is not accurate. There are dark blue and black stripes, it is not a solid black shoe.",
+    "description": "Signature Chuck Taylor design includes the famous cap toe, textured toe bumper, contrast sidewall trim, and medial-side air vent holes.",
+    "id": "chuck-taylor4",
+    "images": [
+        "img/chucks/d.jpg",
+        "img/chucks/d2.jpg",
+        "img/chucks/d3.jpg",
+        "img/chucks/d4.jpg",
+        "img/chucks/d5.jpg",
+        "img/chucks/d6.jpg",
+        "img/chucks/d7.jpg"
+    ],
+    "name": "Converse by John Varvatos Chuck Taylor All Star II OX Textile",
+    "sizeAndWeight": {
+        "features": [
+          "Durable heavy textile upper.",
+          "Low-top silhouette.",
+          "Traditional lace-up closure with metallic eyelets for a secure fit.",
+          "Perforated microsuede and textile linings for a soft touch against foot.",
+          "Cushioned footbed for all-day comfort.",
+          "Nike® Lunarlon insole for superior cushioning.",
+          "Transparent Converse diamond-pattern rubber outsole."
+        ],
+        "weight": "13 oz",
+        "size": "True to size."
+    }
+}
