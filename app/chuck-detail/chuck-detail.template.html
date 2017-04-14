@@ -1,37 +1,45 @@
-<div class="chuck-images">
+<div class="chuck-images col-md-6">
   <img ng-src="{{img}}" class="chuck"
       ng-class="{selected: img === $ctrl.mainImageUrl}"
       ng-repeat="img in $ctrl.chuck.images" />
 </div>
+<div class="col-md-6">
+  <h1>{{$ctrl.chuck.name}}</h1>
+  <p>{{$ctrl.chuck.description}}</p>
+  <ul class="chuck-thumbs">
+    <li ng-repeat="img in $ctrl.chuck.images">
+      <img ng-src="{{img}}" ng-click="$ctrl.setImage(img)" />
+    </li>
+  </ul>
+</div>
 
-<h1>{{$ctrl.chuck.name}}</h1>
-
-<p>{{$ctrl.chuck.description}}</p>
-
-<ul class="chuck-thumbs">
-  <li ng-repeat="img in $ctrl.chuck.images">
-    <img ng-src="{{img}}" ng-click="$ctrl.setImage(img)" />
-  </li>
-</ul>
-
-<ul class="specs">
+<ul class="col-md-6 specs">
   <li>
     <span>Size and Weight</span>
-    <br>
-    <br>
+
     <dl>
+      <br>
       <dt>Sizing</dt>
       <dd>{{$ctrl.chuck.sizeAndWeight.size}}</dd>
+      <br>
       <dt>Weight</dt>
       <dd>{{$ctrl.chuck.sizeAndWeight.weight}}</dd>
-      <dt>Features</dt>
-      <dd ng-repeat="dim in $ctrl.chuck.sizeAndWeight.features">{{dim}}</dd>
     </dl>
   </li>
-  <li>
-    <span>Reviews:</span>
-    <br>
-    <br>
-    <dd>{{$ctrl.chuck.reviews}}</dd>
-  </li>
+  <dl>
+    <dt>Features</dt>
+    <li ng-repeat="dim in $ctrl.chuck.sizeAndWeight.features">{{dim}}</li>
+  </dl>
+
+  <!-- <li>
+  </li> -->
 </ul>
+<div class="buy-it col-md-6 pull-right">
+  <a href="" class="btn btn-default btn-lg btn-block" data-toggle="modal" data-target="#myModal">
+    <img class='tiny-con-star' src="img/chucks/con-logo.png" alt="">Buy It Now
+  </a>
+</div>
+<div class="col-md-6">
+  <h4>Review:</h4>
+  <p>{{$ctrl.chuck.reviews}}</p>
+</div>

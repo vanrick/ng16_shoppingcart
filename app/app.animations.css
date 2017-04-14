@@ -1,8 +1,5 @@
 /* Animate `ngRepeat` in `chuckList` component */
-body{
-  background-color: black;
-  color: white;
-}
+
 select{
   color: black;
 }

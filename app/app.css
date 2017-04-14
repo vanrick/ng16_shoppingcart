@@ -1,13 +1,19 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,900);
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:600');
+
 body {
   padding: 20px;
+  background-color: black;
+  color: white;
 }
 
 h1 {
-  border-bottom: 1px solid gray;
+  /*border-bottom: 1px solid gray;*/
   margin-top: 0;
+  font-family: 'Fira Sans', sans-serif;
 }
 
-/* View: Phone list */
+/* View: Chuck list */
 .chucks {
   list-style: none;
 }
@@ -45,10 +51,11 @@ h1 {
 .chuck-images {
   background-color: white;
   float: left;
-  height: 450px;
+  height: 377px;
   overflow: hidden;
   position: relative;
   width: 450px;
+  margin: 0 2% 2% 0;
 }
 
 .chuck-thumbs {
@@ -90,4 +97,28 @@ h1 {
 .specs > li > span {
   font-size: 1.2em;
   font-weight: bold;
+}
+/*Button*/
+.buy-it a{
+  width: 35%;
+  margin: 0 15% 0 0;
+  text-align: center;
+  border: 0;
+  font-family: 'Fira Sans', sans-serif;
+  transition: all 0.3s ease 0s;
+}
+.buy-it a:hover{
+  background: #CF4647;
+  color: #303345;
+}
+
+.tiny-con-star{
+  height: 5vh;
+  width: auto;
+  padding: 0 5% 0 0;
+}
+.con-star{
+  height: 10vh;
+  width: auto;
+  padding: 0 1% 0 1%;
 }
