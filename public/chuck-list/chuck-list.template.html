@@ -1,0 +1,39 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-5">
+      <h1>Allstar <img class='con-star' src="img/chucks/con-logo.png" alt="">Store</h1>
+    </div>
+    <div class="col-md-2">
+      <!--Sidebar content-->
+
+      <p>
+        Search:
+        <input class="snippetBlack" ng-model="$ctrl.query" />
+      </p>
+
+      <p>
+        Sort by:
+        <select ng-model="$ctrl.orderProp">
+          <option value="name">Alphabetical</option>
+          <option value="age">Newest</option>
+        </select>
+      </p>
+
+    </div>
+    <div class="col-md-10">
+      <!--Body content-->
+
+      <ul class="chucks">
+        <li ng-repeat="chuck in $ctrl.chucks | filter:$ctrl.query | orderBy:$ctrl.orderProp"
+            class="thumbnail chuck-list-item">
+          <a href="#!/chucks/{{chuck.id}}" class="thumb">
+            <img ng-src="{{chuck.imageUrl}}" alt="{{chuck.name}}" />
+          </a>
+          <a href="#!/chucks/{{chuck.id}}">{{chuck.name}}</a>
+          <p class="snippetBlack">{{chuck.snippet}}</p>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</div>
