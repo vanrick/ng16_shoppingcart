@@ -34,15 +34,32 @@
   <!-- <li>
   </li> -->
 </ul>
-<div class="buy-it col-md-6 pull-right">
+<!-- <div class="buy-it col-md-6 pull-right">
   <a href="" ng-click="$ctrl.toggleBtn()" ng-model="$ctrl.showIt" ng-show="!$ctrl.showIt" class="btn btn-default btn-lg btn-block">
     <img class='tiny-con-star' src="img/chucks/con-logo.png" alt="">Buy It Now
   </a>
   <a href="" ng-click="$ctrl.toggleBtn()" ng-show="$ctrl.showIt" class="btn btn-default btn-lg btn-block">
     <img class='tiny-con-star' src="img/chucks/con-logo.png" alt="">It works!!
   </a>
-</div>
+</div> -->
 
+<div class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" ng-click="close(false)" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">Yes or No?</h4>
+      </div>
+      <div class="modal-body">
+        <p>It's your call...</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" ng-click="close(false)" class="btn btn-default" data-dismiss="modal">No</button>
+        <button type="button" ng-click="close(true)" class="btn btn-primary" data-dismiss="modal">Yes</button>
+      </div>
+    </div>
+  </div>
+</div>
 
 <div class="col-md-6">
   <h4>Review:</h4>
