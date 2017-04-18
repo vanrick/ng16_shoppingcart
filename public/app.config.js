@@ -13,6 +13,9 @@ angular.
         when('/chucks/:chuckId', {
           template: '<chuck-detail></chuck-detail>'
         }).
+        when('/chucks/:chuckId/addToCart', {
+          template: '<add-to-cart></add-to-cart>'
+        }).
         otherwise('/chucks');
     }
   ]);

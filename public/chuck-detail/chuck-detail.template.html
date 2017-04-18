@@ -1,16 +1,40 @@
-<div class="chuck-images col-md-6">
-  <img ng-src="{{img}}" class="chuck"
-      ng-class="{selected: img === $ctrl.mainImageUrl}"
-      ng-repeat="img in $ctrl.chuck.images" />
-</div>
-<div class="col-md-6">
-  <h1>{{$ctrl.chuck.name}}</h1>
-  <p>{{$ctrl.chuck.description}}</p>
+<div class="col-md-2">
   <ul class="chuck-thumbs">
     <li ng-repeat="img in $ctrl.chuck.images">
       <img ng-src="{{img}}" ng-click="$ctrl.setImage(img)" />
     </li>
   </ul>
+</div>
+<h1>{{$ctrl.chuck.name}}</h1>
+<p>{{$ctrl.chuck.description}}</p>
+<div class="chuck-images col-md-6">
+  <img ng-src="{{img}}" class="chuck"
+      ng-class="{selected: img === $ctrl.mainImageUrl}"
+      ng-repeat="img in $ctrl.chuck.images" />
+</div>
+<div class="outlined col-md-4">
+  <img class="con-star-cart" src="img/chucks/con-tombstone.png" alt="">
+  <div class="gray">
+    <h1 class='red'>$45.00</h1>
+    <strong><p class="ctr-it">Ships Free!</p></strong>
+    <div class="dropdown">
+      <select ng-model='newQuantity' class="">
+        <option label="Choose Size"></option>
+        <option value='8'>Men's 8, Women's 10</option>
+        <option value='8.5'>Men's 8.5, Women's 10.5</option>
+        <option value='9'>Men's 9, Women's 11</option>
+        <option value='9.5'>Men's 9.5, Women's 11.5</option>
+        <option value='10'>Men's 10, Women's 12.5</option>
+        <option value='10.5'>Men's 10.5</option>
+        <option value='11'>Men's 11</option>
+        <option value='11.5'>Men's 11.5</option>
+        <option value='12'>Men's 12</option>
+        <option value='13'>Men's 13</option>
+      </select>
+    </div>
+      <p class="ctr-it" >Width: Medium</p>
+      <a href="#!/chucks/{{$ctrl.chid}}/addToCart"><button class="btn btn-success" type="button" name="button">Add to cart</button></a>
+  </div>
 </div>
 
 <ul class="col-md-6 specs">
@@ -42,24 +66,6 @@
     <img class='tiny-con-star' src="img/chucks/con-logo.png" alt="">It works!!
   </a>
 </div> -->
-
-<div class="modal fade">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" ng-click="close(false)" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title">Yes or No?</h4>
-      </div>
-      <div class="modal-body">
-        <p>It's your call...</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" ng-click="close(false)" class="btn btn-default" data-dismiss="modal">No</button>
-        <button type="button" ng-click="close(true)" class="btn btn-primary" data-dismiss="modal">Yes</button>
-      </div>
-    </div>
-  </div>
-</div>
 
 <div class="col-md-6">
   <h4>Review:</h4>

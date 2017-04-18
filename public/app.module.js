@@ -7,5 +7,6 @@ angular.module('allstarApp', [
   'angularModalService',
   'core',
   'chuckDetail',
-  'chuckList'
+  'chuckList',
+  'addToCart'
 ]);

@@ -64,16 +64,16 @@ h1 {
 }
 
 .chuck-thumbs img {
-  height: 100px;
+  height: 70px;
   padding: 1em;
-  width: 100px;
+  width: 70px;
 }
 
 .chuck-thumbs li {
   background-color: white;
   border: 1px solid black;
   cursor: pointer;
-  display: inline-block;
+  display: block;
   margin: 1em;
 }
 
@@ -121,4 +121,41 @@ h1 {
   height: 10vh;
   width: auto;
   padding: 0 1% 0 1%;
+}
+.con-star-cart{
+  height: 8vh;
+  width: 100%;
+  background-color: white;
+}
+/*.outlined{
+  align-items: center;
+  justify-content: center;
+}*/
+.outlined .dropdown select{
+  color: black;
+}
+.gray{
+  background-color: #F1F1F1;
+  height: 60vh;
+  width: 100%;
+  color: black;
+}
+.red{
+  color: red;
+}
+.dropdown, .red{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ctr-it{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gray button{
+  /*display: flex;
+  align-items: center;
+  justify-content: center;*/
+  margin: 0 0 0 33%;
 }
