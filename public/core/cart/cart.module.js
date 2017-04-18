@@ -1,4 +1,4 @@
 'use strict';
 
 // Define the `core.chuck` module
-angular.module('core.chuck', ['ngResource']);
+angular.module('core.cart', ['ngResource']);

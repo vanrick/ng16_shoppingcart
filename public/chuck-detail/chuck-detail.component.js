@@ -5,8 +5,8 @@ angular.
   module('chuckDetail').
   component('chuckDetail', {
     templateUrl: 'chuck-detail/chuck-detail.template.html',
-    controller: ['$routeParams', 'Chuck', 'ModalService',
-      function ChuckDetailController($routeParams, Chuck, ModalService, close) {
+    controller: ['$routeParams', 'Chuck', 'CartFactory', 'ModalService',
+      function ChuckDetailController($routeParams, Chuck, CartFactory, ModalService) {
         var self = this;
         self.chuck = Chuck.get({chuckId: $routeParams.chuckId}, function(chuck) {
           self.setImage(chuck.images[0]);
@@ -19,8 +19,11 @@ angular.
 
         self.toggleBtn = function(){
           self.showIt = !self.showIt
-        }
+        };
 
+        self.add = function(){
+          CartFactory.add()
+        }
       }
     ]
   });

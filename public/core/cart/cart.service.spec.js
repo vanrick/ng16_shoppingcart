@@ -31,7 +31,7 @@ describe('Chuck', function() {
     $httpBackend.verifyNoOutstandingRequest();
   });
 
-  it('should fetch the phones data from `/chucks/chucks.json`', function() {
+  it('should fetch the chucks data from `/chucks/chucks.json`', function() {
     var chucks = Chuck.query();
 
     expect(chucks).toEqual([]);

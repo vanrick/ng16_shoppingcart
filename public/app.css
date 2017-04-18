@@ -66,7 +66,7 @@ h1 {
 .chuck-thumbs img {
   height: 70px;
   padding: 1em;
-  width: 70px;
+  width: 90%;
 }
 
 .chuck-thumbs li {
@@ -153,9 +153,62 @@ h1 {
   align-items: center;
   justify-content: center;
 }
-.gray button{
+.gray a button{
   /*display: flex;
   align-items: center;
   justify-content: center;*/
-  margin: 0 0 0 33%;
+  margin: 0 0 0 38%;
+}
+/*shopping cart*/
+#blue-title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4vh;
+  width: 100%;
+  border-radius: 1em;
+  background: #73AD21;
+  padding: 20px;
+  background-color: #303345;
+}
+#gray-title{
+  border-bottom-left-radius: 1em;
+  border-bottom-right-radius: 1em;
+  background-color: #73AD21;
+  padding: 20px;
+  border: 1px solid gray;
+  background-color: #F1F1F1;
+  color: black;
+}
+#gray-title table thead{
+  background-color: #F9F9F9;
+}
+#gray-title table thead th{
+  color: gray;
+}
+#gray-title table tbody tr td button{
+  background-color: white;
+  color: blue;
+  border: .01em solid gray;
+}
+#total{
+  text-align: right;
+}
+#total-box{
+  background-color: #F1F1F1;
+  border-radius: 1em;
+  color: black;
+  width: 100%;
+  margin: 0 0 0 0%;
+}
+#checkoutOrContinue{
+  padding: 3% 0 0 0;
+}
+#continue{
+  background-color: #F1F1F1;
+  color: #303345;
+}
+#checkout{
+  background-color: orange;
+  margin: 0 0 0 65%;
 }
