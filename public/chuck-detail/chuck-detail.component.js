@@ -21,9 +21,16 @@ angular.
           self.showIt = !self.showIt
         };
 
-        self.add = function(){
-          CartFactory.add()
-        }
+        self.add = function(size, shoe){
+          CartFactory.add(size, shoe)
+        };
+        // self.inventory = function(){
+        //   console.log('controller: ',CartFactory.inventory);
+        //   CartFactory.inventory
+        // }
+
+
+        self.sizes = CartFactory.shoeSize
       }
     ]
   });

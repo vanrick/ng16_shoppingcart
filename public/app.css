@@ -66,7 +66,7 @@ h1 {
 .chuck-thumbs img {
   height: 70px;
   padding: 1em;
-  width: 90%;
+  width: 70px;
 }
 
 .chuck-thumbs li {
@@ -137,7 +137,7 @@ h1 {
 .gray{
   background-color: #F1F1F1;
   height: 60vh;
-  width: 100%;
+  width: 84%;
   color: black;
 }
 .red{
@@ -211,4 +211,22 @@ h1 {
 #checkout{
   background-color: orange;
   margin: 0 0 0 65%;
+}
+.error{
+  color: red;
+}
+
+/*addtocart*/
+.table tbody tr th img{
+  height: 145px;
+  width: auto;
+}
+
+.table tbody tr td input{
+  height: auto;
+  width: 3vw;
+}
+a:hover {
+  cursor: pointer;
+  cursor: hand; 
 }

@@ -15,17 +15,24 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
+          <tr ng-repeat="shoe in $ctrl.inventory">
+            <th scope="row">
+              <h5>{{shoe.name}}</h5>
+              <img src="{{shoe.images[0]}}" alt="">
+                  <h5>SIZE: {{shoe.size}}</h5>
+
+
+            </th>
+            <td ng-model='$ctrl.price' >{{shoe.price/100 | currency:" $"}}</td>
             <td>
-              Otto
+              <input type="number"  min="1" ng-model="$ctrl.qty" value={{shoe.order_quantity}}>
+
               <br>
-              <button type="button" class="btn btn-secondary"name="button">Update</button>
+              <button type="button" ng-click="$ctrl.multiply(shoe,$ctrl.qty); $ctrl.grandTot()" class="btn btn-secondary"name="button">Update</button>
               <br>
-              <a href="#">✖Remove</a>
+              <a ng-click="$ctrl.delete(shoe)">✖Remove</a>
             </td>
-            <td>@mdo</td>
+            <td>{{shoe.order_quantity * shoe.price/100 | currency:" $"}}</td>
             <!-- <td><button type="button" name="button">✖Remove</button></td> -->
           </tr>
         </tbody>
@@ -43,15 +50,15 @@
         </div>
       </div>
       <div id="total" class="col-md-2">
-        <h5>$0.00</h5>
+        <h5>{{$ctrl.grandTotal/100 | currency:" $"}}</h5>
         <h5><br></h5>
-        <h5>$0.00</h5>
+        <h5>{{$ctrl.grandTotal/100 | currency:" $"}}</h5>
       </div>
     </div>
 
     <div id="checkoutOrContinue">
-      <button id="continue" class="btn btn-secondary" type="button" name="button">Continue Shopping</button>
-      <button id="checkout" class="btn btn-secondary" type="button" name="button">Proceed to Checkout</button>
+      <a href="#!/chucks"><button id="continue" class="btn btn-secondary" type="button" name="button">Continue Shopping</button></a>
+      <button ng-click="$ctrl.refresh()"id="checkout" class="btn btn-secondary" type="button" name="button">Proceed to Checkout</button>
     </div>
   <!-- </div> -->
 </div>

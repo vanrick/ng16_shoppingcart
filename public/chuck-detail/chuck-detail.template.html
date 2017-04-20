@@ -14,27 +14,30 @@
       ng-repeat="img in $ctrl.chuck.images" />
 </div>
 <div class="outlined col-md-4">
-  <img class="con-star-cart" src="img/chucks/con-tombstone.png" alt="">
   <div class="gray">
-    <h1 class='red'>{{$ctrl.chuck.price}}</h1>
+    <img class="con-star-cart" src="img/chucks/con-tombstone.png" alt="">
+    <h1 class='red'>{{$ctrl.chuck.price/100 | currency:" $"}}</h1>
     <strong><p class="ctr-it">Ships Free!</p></strong>
     <div class="dropdown">
-      <select ng-model='newQuantity' class="">
-        <option label="Choose Size"></option>
-        <option value='8'>Men's 8, Women's 10</option>
-        <option value='8.5'>Men's 8.5, Women's 10.5</option>
-        <option value='9'>Men's 9, Women's 11</option>
-        <option value='9.5'>Men's 9.5, Women's 11.5</option>
-        <option value='10'>Men's 10, Women's 12.5</option>
-        <option value='10.5'>Men's 10.5</option>
-        <option value='11'>Men's 11</option>
-        <option value='11.5'>Men's 11.5</option>
-        <option value='12'>Men's 12</option>
-        <option value='13'>Men's 13</option>
-      </select>
+      <form name="myForm">
+        <select name="size_name" ng-model='$ctrl.newSize' class="" required>
+          <option label="Choose Size"></option>
+          <option ng-repeat="size in $ctrl.sizes" ng-value='{{size.value}}'>{{size.name}}</option>
+        </select>
+        <p><span class='error' ng-show="myForm.size_name.$dirty && myForm.size_name.$invalid">Please Select A Size</span></p>
+
+        <p class="ctr-it" >Width: Medium</p>
+        <div>
+          <a href="#!/chucks/{{$ctrl.chid}}/addToCart">
+          <button ng-show="myForm.size_name.$dirty && myForm.size_name.$valid" ng-click='$ctrl.add($ctrl.newSize, $ctrl.chuck)' class="btn btn-success" type="button" name="button">Add to cart</button>
+          </a>
+        </div>
+
+      </form>
     </div>
-      <p class="ctr-it" >Width: Medium</p>
-      <a href="#!/chucks/{{$ctrl.chid}}/addToCart"><button ng-click='$ctrl.add()' class="btn btn-success" type="button" name="button">Add to cart</button></a>
+
+
+
   </div>
 </div>
 <div class="container">
