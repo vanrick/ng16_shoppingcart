@@ -27,7 +27,7 @@
         <p><span class='error' ng-show="myForm.size_name.$dirty && myForm.size_name.$invalid">Please Select A Size</span></p>
 
         <p class="ctr-it" >Width: Medium</p>
-        <div>
+        <div >
           <a href="#!/chucks/{{$ctrl.chid}}/addToCart">
           <button ng-show="myForm.size_name.$dirty && myForm.size_name.$valid" ng-click='$ctrl.add($ctrl.newSize, $ctrl.chuck)' class="btn btn-success" type="button" name="button">Add to cart</button>
           </a>

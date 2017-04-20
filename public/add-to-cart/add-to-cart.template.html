@@ -17,8 +17,8 @@
         <tbody>
           <tr ng-repeat="shoe in $ctrl.inventory">
             <th scope="row">
-              <h5>{{shoe.name}}</h5>
-              <img src="{{shoe.images[0]}}" alt="">
+              <a href="#!/chucks/{{shoe.id}}"><h5>{{shoe.name}}</h5></a>
+              <a href="#!/chucks/{{shoe.id}}"><img src="{{shoe.images[0]}}" alt=""></a>
                   <h5>SIZE: {{shoe.size}}</h5>
 
 
