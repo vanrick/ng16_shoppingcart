@@ -23,17 +23,16 @@
 
 
             </th>
-            <td ng-model='$ctrl.price' >{{shoe.price/100 | currency:" $"}}</td>
+            <td ng-model="$ctrl.price">{{shoe.price/100 | currency:" $"}}</td>
             <td>
-              <input type="number"  min="1" ng-model="$ctrl.qty" value={{shoe.order_quantity}}>
+              <input type="number" min="1" ng-model="$ctrl.quantity[$index]" value='{{shoe.order_quantity}}'>
 
               <br>
-              <button type="button" ng-click="$ctrl.multiply(shoe,$ctrl.qty); $ctrl.grandTot()" class="btn btn-secondary"name="button">Update</button>
+              <button type="button" ng-click="$ctrl.multiply(shoe,$ctrl.quantity[$index])" class="btn btn-secondary"name="button">Update</button>
               <br>
               <a ng-click="$ctrl.delete(shoe)">✖Remove</a>
             </td>
             <td>{{shoe.order_quantity * shoe.price/100 | currency:" $"}}</td>
-            <!-- <td><button type="button" name="button">✖Remove</button></td> -->
           </tr>
         </tbody>
       </table>
@@ -50,9 +49,9 @@
         </div>
       </div>
       <div id="total" class="col-md-2">
-        <h5>{{$ctrl.grandTotal/100 | currency:" $"}}</h5>
-        <h5><br></h5>
-        <h5>{{$ctrl.grandTotal/100 | currency:" $"}}</h5>
+        <h5>{{$ctrl.getTotal()/100 | currency:" $"}}</h5>
+        <h5 class="green">$0.00</h5>
+        <h5>{{$ctrl.getTotal()/100 | currency:" $"}}</h5>
       </div>
     </div>
 

@@ -7,23 +7,7 @@ angular.
       return {
         inventory: [],
         grandTotal: 0,
-        // add: function (size,shoe) {
-        //     if (this.inventory.length > 0) {
-        //       for (var i = 0; i < this.inventory.length; i++) {
-        //         if (shoe.id == this.inventory[i].id) {
-        //           this.inventory[i].order_quantity += Number(qty)
-        //           break;
-        //       }else{
-        //         shoe.order_quantity = Number(qty)
-        //         this.inventory.push(shoe)
-        //         break;
-        //       }
-        //     }
-        //     }else{
-        //       shoe.order_quantity = Number(qty)
-        //       this.inventory.push(shoe)
-        //   }
-        // },
+
         add: function(size, shoe){
           shoe.size = size
           for (var i = 0; i < this.inventory.length; i++) {
@@ -38,7 +22,6 @@ angular.
         },
         updateQuantity: function(shoe, qty){
           shoe.order_quantity = qty
-          this.inventory.push(shoe)
           console.log(this.inventory);
         },
         delete: function(shoe){
