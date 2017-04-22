@@ -1,63 +1,73 @@
 <div class="container">
-  <!-- <div class="col-md-12"> -->
-    <div id="blue-title" class="col-md-12">
-      <h4>CURRENTLY IN YOUR SHOPPING CART</h4>
-    </div>
-    <br>
-    <div id="gray-title">
-      <table class="table">
-        <thead class="thead-default">
-          <tr>
-            <th>YOUR ITEMS</th>
-            <th>ITEM PRICE</th>
-            <th>QUANTITY</th>
-            <th>PRICE</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr ng-repeat="shoe in $ctrl.inventory">
-            <th scope="row">
-              <a href="#!/chucks/{{shoe.id}}"><h5>{{shoe.name}}</h5></a>
-              <a href="#!/chucks/{{shoe.id}}"><img src="{{shoe.images[0]}}" alt=""></a>
-                  <h5>SIZE: {{shoe.size}}</h5>
+    <div class="row">
+      <div id="blue-title" class="col-md-12 col-xs-12">
+        <h4>CURRENTLY IN YOUR SHOPPING CART</h4>
+      </div>
+      <br>
+      <div id="gray-title col-md-12 col-xs-12">
+        <table class="table">
+          <thead class="thead-default">
+            <tr>
+              <th>YOUR ITEMS</th>
+              <th>ITEM PRICE</th>
+              <th>QUANTITY</th>
+              <th>PRICE</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr ng-repeat="shoe in $ctrl.inventory">
+              <th scope="row">
+                <a href="#!/chucks/{{shoe.id}}"><h5>{{shoe.name}}</h5></a>
+                <a href="#!/chucks/{{shoe.id}}"><img src="{{shoe.images[0]}}" alt=""></a>
+                <h5>SIZE: {{shoe.size}}</h5>
 
 
-            </th>
-            <td ng-model="$ctrl.price">{{shoe.price/100 | currency:" $"}}</td>
-            <td>
-              <input type="number" min="1" ng-model="$ctrl.quantity[$index]" value='{{shoe.order_quantity}}'>
+              </th>
+              <td ng-model="$ctrl.price">{{shoe.price/100 | currency:" $"}}</td>
+              <td>
+                <input type="number" min="1" ng-model="$ctrl.quantity[$index]" value='{{shoe.order_quantity}}'>
 
-              <br>
-              <button type="button" ng-click="$ctrl.multiply(shoe,$ctrl.quantity[$index])" class="btn btn-secondary"name="button">Update</button>
-              <br>
-              <a ng-click="$ctrl.delete(shoe)">✖Remove</a>
-            </td>
-            <td>{{shoe.order_quantity * shoe.price/100 | currency:" $"}}</td>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-    <div id="total-box" class="row">
-      <div class="col-md-8">
-        <div id="total">
+                <br>
+                <button type="button" ng-click="$ctrl.multiply(shoe,$ctrl.quantity[$index])" class="btn btn-secondary"name="button">Update</button>
+                <br>
+                <a ng-click="$ctrl.delete(shoe)">✖Remove</a>
+              </td>
+              <td>{{shoe.order_quantity * shoe.price/100 | currency:" $"}}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="total-box" class="col-md-12 col-xs-12">
+        <div class="col-md-8 col-xs-6">
+          <div id="total">
 
-          <h5>SUBTOTAL: </h5>
+            <h5>SUBTOTAL: </h5>
 
-          <h5>FREE SHIPPING</h5>
+            <h5>FREE SHIPPING</h5>
 
-          <h5>GRAND TOTAL: </h5>
+            <h5>GRAND TOTAL: </h5>
+          </div>
+        </div>
+        <div id="total" class="col-md-2 col-xs-6">
+          <h5>{{$ctrl.getTotal()/100 | currency:" $"}}</h5>
+          <h5 class="green">$0.00</h5>
+          <h5>{{$ctrl.getTotal()/100 | currency:" $"}}</h5>
+        </div>
+
+        <div class="col-md-2"></div>
+
+      </div>
+
+      <div id="checkoutOrContinue" class="row">
+
+        <div class="col-md-4 col-xs-4 pull-left">
+          <a href="#!/chucks"><button id="continue" class="btn btn-secondary" type="button" name="button">Continue Shopping</button></a>
+        </div>
+        <div class="col-md-4 col-xs-4">
+          <button ng-click="$ctrl.refresh()"id="checkout" class="btn btn-secondary" type="button" name="button">Proceed to Checkout</button>
         </div>
       </div>
-      <div id="total" class="col-md-2">
-        <h5>{{$ctrl.getTotal()/100 | currency:" $"}}</h5>
-        <h5 class="green">$0.00</h5>
-        <h5>{{$ctrl.getTotal()/100 | currency:" $"}}</h5>
-      </div>
+
     </div>
 
-    <div id="checkoutOrContinue">
-      <a href="#!/chucks"><button id="continue" class="btn btn-secondary" type="button" name="button">Continue Shopping</button></a>
-      <button ng-click="$ctrl.refresh()"id="checkout" class="btn btn-secondary" type="button" name="button">Proceed to Checkout</button>
-    </div>
-  <!-- </div> -->
 </div>

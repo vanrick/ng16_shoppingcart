@@ -61,10 +61,10 @@ h1 {
 .chuck-thumbs {
   list-style: none;
   margin: 0;
-  width: auto;
   height: 74vh;
+  width: auto;
   overflow: scroll;
-  padding: 0 10% 0 0;
+  margin: 0 12% 0 0;
 }
 
 .chuck-thumbs img {
@@ -142,6 +142,7 @@ h1 {
   height: 60vh;
   width: 84%;
   color: black;
+  margin: -2% 0 0 -13%;
 }
 .red{
   color: red;
@@ -171,15 +172,21 @@ h1 {
   padding: 20px;
   background-color: #303345;
 }
-#gray-title{
+/*#gray-title{
   border-bottom-left-radius: 1em;
   border-bottom-right-radius: 1em;
   background-color: #73AD21;
   padding: 20px;
   border: 1px solid gray;
-  background-color: #F1F1F1;
   color: black;
+}*/
+
+.table{
+  background-color: #F9F9F9;
+  color: gray;
+  border-radius: 1em;
 }
+
 #gray-title table thead{
   background-color: #F9F9F9;
 }
@@ -202,7 +209,7 @@ h1 {
   margin: 0 0 0 0%;
 }
 #checkoutOrContinue{
-  padding: 3% 0 0 0;
+  padding: 8% 0 0 0;
 }
 #continue{
   background-color: #F1F1F1;
@@ -210,8 +217,9 @@ h1 {
 }
 #checkout{
   background-color: orange;
-  margin: 0 0 0 65%;
+  margin: 0 0 0 165%;
 }
+
 .error{
   color: red;
 }
@@ -283,6 +291,7 @@ a:hover {
     width: 95vw;
     color: black;
     padding: 0 5% 5% 0;
+    margin: 0;
   }
   .con-star-cart{
     height: 5vh;
@@ -308,4 +317,15 @@ a:hover {
     padding: 5% 0 0 0;
   }
 
+/*cart total page*/
+#checkout{
+  background-color: orange;
+  margin: 0 0 0 75%;
+}
+#checkoutOrContinue{
+  padding: 25% 0 0 0;
+}
+.table tbody tr td input{
+  height: auto;
+  width: 10vw;
 }
