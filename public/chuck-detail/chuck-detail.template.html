@@ -1,27 +1,28 @@
-<div class="row">
+<div class="row" id="wrapper">
 
-
-
-  <div class="col-md-2 col-xs-12">
+  <div class="div-order1 col-md-2 col-xs-12">
     <ul class="chuck-thumbs">
       <li ng-repeat="img in $ctrl.chuck.images">
         <img ng-src="{{img}}" ng-click="$ctrl.setImage(img)" />
       </li>
     </ul>
   </div>
-  <div class="col-md-10 col-xs-12">
-    <a href="#!/chucks"> << Back </a>
-    <h1>{{$ctrl.chuck.name}}</h1>
-  </div>
-  <div class="col-md-6 col-xs-12">
-    <p>{{$ctrl.chuck.description}}</p>
-    <div class="chuck-images col-md-6">
-      <img ng-src="{{img}}" class="chuck"
-      ng-class="{selected: img === $ctrl.mainImageUrl}"
-      ng-repeat="img in $ctrl.chuck.images" />
+  <div class="div-order2">
+    <div class="col-md-10 col-xs-12">
+      <a href="#!/chucks"> << Back </a>
+      <h1>{{$ctrl.chuck.name}}</h1>
+    </div>
+    <div class="col-md-6 col-xs-12">
+      <p>{{$ctrl.chuck.description}}</p>
+      <div class="chuck-images col-md-6">
+        <img ng-src="{{img}}" class="chuck"
+        ng-class="{selected: img === $ctrl.mainImageUrl}"
+        ng-repeat="img in $ctrl.chuck.images" />
+      </div>
     </div>
   </div>
-  <div class="outlined col-md-4 col-xs-12">
+
+  <div class="div-order3 outlined col-md-4 col-xs-12">
     <div class="gray">
       <img class="con-star-cart" src="img/chucks/con-tombstone.png" alt="">
       <h1 class='red'>{{$ctrl.chuck.price/100 | currency:" $"}}</h1>
@@ -43,35 +44,32 @@
 
         </form>
       </div>
-
-
-
     </div>
   </div>
-  <div class="container">
 
-    <ul class="col-md-4 specs">
-      <li>
-        <span>Size and Weight</span>
+  <div class="div-order4 container">
 
+    <div class="col-md-4 col-xs-12">
+      <ul class="specs">
+        <li>
+          <span>Size and Weight</span>
+          <dl>
+            <br>
+            <dt>Sizing</dt>
+            <dd>{{$ctrl.chuck.sizeAndWeight.size}}</dd>
+            <br>
+            <dt>Weight</dt>
+            <dd>{{$ctrl.chuck.sizeAndWeight.weight}}</dd>
+          </dl>
+        </li>
         <dl>
-          <br>
-          <dt>Sizing</dt>
-          <dd>{{$ctrl.chuck.sizeAndWeight.size}}</dd>
-          <br>
-          <dt>Weight</dt>
-          <dd>{{$ctrl.chuck.sizeAndWeight.weight}}</dd>
+          <dt>Features</dt>
+          <li ng-repeat="dim in $ctrl.chuck.sizeAndWeight.features">{{dim}}</li>
         </dl>
-      </li>
-      <dl>
-        <dt>Features</dt>
-        <li ng-repeat="dim in $ctrl.chuck.sizeAndWeight.features">{{dim}}</li>
-      </dl>
+      </ul>
+    </div>
 
-    </ul>
-
-
-    <div class="col-md-8">
+    <div class="col-md-8 col-xs-12">
       <h4>Review:</h4>
       <p>{{$ctrl.chuck.reviews}}</p>
     </div>
