@@ -61,9 +61,10 @@ h1 {
 .chuck-thumbs {
   list-style: none;
   margin: 0;
-  width: 86%;
+  width: auto;
   height: 74vh;
   overflow: scroll;
+  padding: 0 10% 0 0;
 }
 
 .chuck-thumbs img {
@@ -130,10 +131,9 @@ h1 {
   width: 100%;
   background-color: white;
 }
-/*.outlined{
-  align-items: center;
-  justify-content: center;
-}*/
+.outlined{
+  padding: 3% 0 0 0;
+}
 .outlined .dropdown select{
   color: black;
 }
@@ -232,4 +232,33 @@ h1 {
 a:hover {
   cursor: pointer;
   cursor: hand;
+}
+
+/*media queries*/
+
+@media screen and (max-width: 500px) {
+  .chuck-thumbs {
+    list-style: none;
+    margin: 0;
+    width: 10vw;
+    height: 74vh;
+    overflow: scroll;
+    /*padding: 0 10% 0 0;*/
+    /*float: right;*/
+    display: inline;
+  }
+
+  /*.chuck-thumbs img {
+    height: 80px;
+    padding: 1em;
+    width: 80px;
+  }*/
+
+  .chuck-thumbs li {
+    background-color: white;
+    border: 1px solid black;
+    cursor: pointer;
+    display: block;
+    margin: 1em;
+  }
 }

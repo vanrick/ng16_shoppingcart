@@ -5,6 +5,7 @@ select{
 }
 .snippetBlack{
   color: black;
+  /*width: 100%;*/
 }
 .chuck-list-item.ng-enter,
 .chuck-list-item.ng-leave,
@@ -32,3 +33,29 @@ select{
   padding-bottom: 4px;
   padding-top: 15px;
 }
+
+/*media queries*/
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+
+/*extra small*/
+@media screen and (max-width: 500px) {
+    .inputBox{
+        width: 100%;
+    }
+    .snippetBox{
+      overflow: auto;
+    }
+    .col-md-2 select {
+      padding: 2% 0 2% 0;
+      background-color: white;
+    }
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) { ... }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) { ... }
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) { ... }
