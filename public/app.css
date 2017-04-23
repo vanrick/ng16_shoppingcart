@@ -329,3 +329,10 @@ a:hover {
   height: auto;
   width: 10vw;
 }
+.table tbody tr th img{
+  height: 118px;
+  width: auto;
+}
+.table tbody tr th h5{
+  font-size: 11.5;
+}
