@@ -336,3 +336,32 @@ a:hover {
 .table tbody tr th h5{
   font-size: 11.5;
 }
+
+/*end of media query 500*/
+}
+/*start of s7 edge width*/
+@media screen and (max-width: 360px) {
+  #checkoutOrContinue{
+    padding: 30% 0 0 0;
+  }
+  #checkout{
+    font-size: 11.5px;
+  }
+  #continue{
+    font-size: 11.5px;
+  }
+  .table tbody tr th img{
+    height: 80px;
+    width: auto;
+  }
+  .table tbody tr th h5{
+    font-size: 11px;
+  }
+  .table tbody tr td button{
+    font-size: 11px;
+  }
+  .table thead tr th{
+    font-size: 11px;
+  }
+
+}
