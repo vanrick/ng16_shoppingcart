@@ -337,6 +337,9 @@ a:hover {
   font-size: 11.5;
 }
 
+.chucks li {
+  overflow: hidden;
+}
 /*end of media query 500*/
 }
 /*start of s7 edge width*/
